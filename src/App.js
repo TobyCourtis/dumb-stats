@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import CountUp from 'react-countup';
 
 function App() {
+
+  var start = 0
+  var end = 0
+
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          How many people are shagging?
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <CountUp
+          start={start}
+          end={end}
+          duration={1}
+          separator=","
+          decimal="."
+          suffix=" shaggers"
+          onEnd={() => console.log('Ended! 👏')}
+          onStart={() => console.log('Started! 💨')}
         >
-          Learn React
-        </a>
+      </CountUp>
       </header>
+
     </div>
   );
 }
