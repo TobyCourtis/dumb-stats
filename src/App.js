@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          How many people are shagging?
+          How many people are shagging now:
         </p>
         <CountUp
           start={start}
