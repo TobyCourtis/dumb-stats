@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import CountUp from 'react-countup';
+import {counterInputVars} from './counter-logic/counter-logic'
 
 function App() {
 
-  var start = 0
-  var end = 0
-
+  var counterInput = counterInputVars()
 
   return (
     <div className="App">
@@ -16,8 +15,8 @@ function App() {
           How many people are shagging now:
         </p>
         <CountUp
-          start={start}
-          end={end}
+          start={counterInput.start}
+          end={counterInput.end}
           duration={1}
           separator=","
           decimal="."
