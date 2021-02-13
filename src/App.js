@@ -17,7 +17,7 @@ function App() {
         <CountUp
           start={counterInput.start}
           end={counterInput.end}
-          duration={1}
+          duration={10}
           separator=","
           decimal="."
           suffix=" shaggers"
