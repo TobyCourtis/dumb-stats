@@ -10,23 +10,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          How many people are shagging now:
-        </p>
         <CountUp
+          className="counter"
           start={counterInput.start}
           end={counterInput.end}
-          duration={10}
+          duration={3}
           separator=","
           decimal="."
-          suffix=" shaggers"
+          suffix=""
           onEnd={() => console.log('Ended! 👏')}
           onStart={() => console.log('Started! 💨')}
         >
-      </CountUp>
+        </CountUp>
+        <p className="counterParagraph">
+            People are shagging right now
+        </p>
       </header>
-
     </div>
   );
 }
