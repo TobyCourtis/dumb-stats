@@ -15,8 +15,5 @@ export function counterInputVars(){
     
     var numberOfPeople = max - difference*((max - min)/12)
 
-    return {
-        start: 0,
-        end: numberOfPeople
-    }
+    return numberOfPeople
 }
