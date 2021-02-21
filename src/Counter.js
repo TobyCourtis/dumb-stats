@@ -11,9 +11,6 @@ const Counter = () => {
     
     const {
         countUp,
-        start,
-        pauseResume,
-        reset,
         update
     } = useCountUp({
         end: counterInputVars(),
