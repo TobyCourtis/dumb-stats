@@ -1,22 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import CountUp from 'react-countup';
+import {counterInputVars} from './counter-logic/counter-logic'
 
 function App() {
+
+  var counterInput = counterInputVars()
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <CountUp
+          className="counter"
+          start={counterInput.start}
+          end={counterInput.end}
+          duration={3}
+          separator=","
+          decimal="."
+          suffix=""
+          onEnd={() => console.log('Ended! 👏')}
+          onStart={() => console.log('Started! 💨')}
         >
-          Learn React
-        </a>
+        </CountUp>
+        <p className="counterParagraph">
+            People are shagging right now
+        </p>
       </header>
     </div>
   );
