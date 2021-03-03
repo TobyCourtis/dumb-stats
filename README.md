@@ -1,13 +1,14 @@
-# Dumb Statistics App
+# Dumb Statistics App 
 
-Web App to display dumb statistics with a live counter
-
+Web Application that displays 'dumb statistics' with live figures - hosted at [www.dumbstats.org](http://dumbstats.org/).
 
 
 ## How to run
 
-In development run 'npm start' to begin hosting in development mode
+In development run ``npm start`` to begin hosting in development mode.
+
+If running for the first time then an ``npm install`` is required prior to running.
 
 ## Production deployment 
 
-'npm run build' will produce a build folder with the static production application inside, including the .htaccess file
+``npm run build`` will produce a build folder with the static production application inside, including the .htaccess file for deployment on an Apache Server.
