@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useCountUp } from 'react-countup';
-import {currentNumberOfShaggers} from '../counter-logic/counter-logic'
-import {addNoise} from '../counter-logic/counter-logic'
+import {currentNumberOfShaggers} from '../counter-logic/SexLogic'
+import {addNoise} from '../counter-logic/SexLogic'
 
 
 const SexCounter = () => {

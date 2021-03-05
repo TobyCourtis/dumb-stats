@@ -1,4 +1,4 @@
-import './App.css';
+import './CSS/App.css';
 import SexCounter from './Counters/Sex'
 import DrivingCounter from './Counters/Driving'
 import EatingCounter from './Counters/Eating'
