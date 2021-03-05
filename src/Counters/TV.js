@@ -10,7 +10,7 @@ const TVCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: currentNumberOfShaggers(),
+        end: 96185927,
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const TVCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(currentNumberOfShaggers() + addNoise())
+        update(96185927 + addNoise())
 
         const timer = setInterval(() => {
-            update(currentNumberOfShaggers() + addNoise())
+            update(96185927 + addNoise())
         }, 1500);
 
         return () => {
@@ -33,7 +33,7 @@ const TVCounter = () => {
         <div>
             <span className="counter">{countUp}</span>
             <p className="counterParagraph">
-                People are shagging right now
+                People are watching TV right now
             </p>
         </div>
     );

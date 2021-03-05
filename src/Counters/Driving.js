@@ -10,7 +10,7 @@ const DrivingCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: 1256756,
+        end: 78184816,
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const DrivingCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(1256756 + addNoise())
+        update(78184816 + addNoise())
 
         const timer = setInterval(() => {
-            update(1256756 + addNoise())
+            update(78184816 + addNoise())
         }, 1500);
 
         return () => {

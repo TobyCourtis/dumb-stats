@@ -10,7 +10,7 @@ const MasturbatingCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: currentNumberOfShaggers(),
+        end: (currentNumberOfShaggers() * 5),
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const MasturbatingCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(currentNumberOfShaggers() + addNoise())
+        update((currentNumberOfShaggers() * 5) + addNoise())
 
         const timer = setInterval(() => {
-            update(currentNumberOfShaggers() + addNoise())
+            update((currentNumberOfShaggers() * 5) + addNoise())
         }, 1500);
 
         return () => {

@@ -10,24 +10,10 @@ const SpaceCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: currentNumberOfShaggers(),
+        end: 7,
         duration: 3,
-        separator: ",",
-        onEnd: () => updateCounter()
+        separator: ","
     });
-
-    function updateCounter(){
-        // update called twice below so there is a nice transition from initial count up and noise
-        update(currentNumberOfShaggers() + addNoise())
-
-        const timer = setInterval(() => {
-            update(currentNumberOfShaggers() + addNoise())
-        }, 1500);
-
-        return () => {
-            clearInterval(timer);
-        };
-    }
 
     return (
         <div>

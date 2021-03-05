@@ -10,7 +10,7 @@ const EatingCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: currentNumberOfShaggers(),
+        end: 13586395,
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const EatingCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(currentNumberOfShaggers() + addNoise())
+        update(13586395 + addNoise())
 
         const timer = setInterval(() => {
-            update(currentNumberOfShaggers() + addNoise())
+            update(13586395 + addNoise())
         }, 1500);
 
         return () => {

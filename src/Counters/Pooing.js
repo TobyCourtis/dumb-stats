@@ -10,7 +10,7 @@ const PooingCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: currentNumberOfShaggers(),
+        end: (currentNumberOfShaggers() * 10),
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const PooingCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(currentNumberOfShaggers() + addNoise())
+        update((currentNumberOfShaggers() * 10) + addNoise() -1)
 
         const timer = setInterval(() => {
-            update(currentNumberOfShaggers() + addNoise())
+            update((currentNumberOfShaggers() * 10) + addNoise())
         }, 1500);
 
         return () => {

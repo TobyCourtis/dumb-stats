@@ -10,7 +10,7 @@ const FlyingCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: currentNumberOfShaggers(),
+        end: 24576,
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const FlyingCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(currentNumberOfShaggers() + addNoise())
+        update(24576 + addNoise())
 
         const timer = setInterval(() => {
-            update(currentNumberOfShaggers() + addNoise())
+            update(24576 + addNoise())
         }, 1500);
 
         return () => {
