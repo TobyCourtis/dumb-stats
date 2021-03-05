@@ -1,21 +1,43 @@
+/* html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+} */
+
+body {
+    height: 95vh;
+    overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
 
+.counterDiv{
+  /* height: 50%;  */
+  /* border: 1px solid rgba(0, 0, 0, 0.8);   */
+  text-align: center;
+  margin: auto;
+}
+
 .counter {
-  font-size: 25vw;
+  font-size: 8vh;
 }
 
 .counterParagraph {
-  font-size: 5vw;
+  font-size: 2vw;
 }
 
-.App-header {
+.App-body {
+  display: grid;
+  grid-template-columns: auto auto auto;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;  
   color: white;
+  /* could remove? */
+  padding: 10px;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }

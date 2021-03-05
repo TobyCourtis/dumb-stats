@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useCountUp } from 'react-countup';
-import {currentNumberOfShaggers} from './counter-logic/counter-logic'
-import {addNoise} from './counter-logic/counter-logic'
+import {currentNumberOfShaggers} from '../counter-logic/counter-logic'
+import {addNoise} from '../counter-logic/counter-logic'
 
 
-const Counter = () => {
+const SexCounter = () => {
 
     const {
         countUp,
@@ -32,8 +32,11 @@ const Counter = () => {
     return (
         <div>
             <span className="counter">{countUp}</span>
+            <p className="counterParagraph">
+                People are shagging right now
+            </p>
         </div>
     );
 };
 
-export default Counter;
+export default SexCounter;
