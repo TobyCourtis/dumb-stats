@@ -1,13 +1,13 @@
 import './CSS/App.css';
-import SexCounter from './Counters/Sex'
-import DrivingCounter from './Counters/Driving'
-import EatingCounter from './Counters/Eating'
-import FlyingCounter from './Counters/Flying'
-import MasturbatingCounter from './Counters/Masturbating'
-import PooingCounter from './Counters/Pooing'
-import SpaceCounter from './Counters/Space'
-import TrafficCounter from './Counters/Traffic'
-import TVCounter from './Counters/TV'
+import SexCounter from './counters/Sex'
+import DrivingCounter from './counters/Driving'
+import EatingCounter from './counters/Eating'
+import FlyingCounter from './counters/Flying'
+import MasturbatingCounter from './counters/Masturbating'
+import PooingCounter from './counters/Pooing'
+import SpaceCounter from './counters/Space'
+import TrafficCounter from './counters/Traffic'
+import TVCounter from './counters/TV'
 
 function App() {
 
