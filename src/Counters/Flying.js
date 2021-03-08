@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useCountUp } from 'react-countup';
-import {currentNumberOfShaggers} from '../counter-logic/SexLogic'
+import {currentNumberOfFlyers} from '../counter-logic/FlyingLogic'
 import {addNoise} from '../counter-logic/SexLogic'
 
 
@@ -10,7 +10,7 @@ const FlyingCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: 24576,
+        end: currentNumberOfFlyers(),
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const FlyingCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(24576 + addNoise())
+        update(currentNumberOfFlyers() + addNoise())
 
         const timer = setInterval(() => {
-            update(24576 + addNoise())
+            update(currentNumberOfFlyers() + addNoise())
         }, 1500);
 
         return () => {

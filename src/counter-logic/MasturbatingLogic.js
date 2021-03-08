@@ -12,12 +12,12 @@ const maxDateTime = new Date("Sat Feb 13 2021 09:00:00 GMT-0500")
 const maxTimeInSeconds = findSecondsFromDate(maxDateTime)
 const secondsInTwelveHours = 43200
 
-export function currentNumberOfShaggers(){
-    return 1
+export function currentNumberOfMasturbaters(){
+    return 810000
 }
 
 export function addNoise(maxFluctuation){
-    const deviation = (currentNumberOfShaggers()/max)*10
+    const deviation = (currentNumberOfMasturbaters()/max)*10
 
     return randomNormal({mean: 0, dev: deviation})
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useCountUp } from 'react-countup';
-import {currentNumberOfShaggers} from '../counter-logic/SexLogic'
-import {addNoise} from '../counter-logic/SexLogic'
+import {currentNumberOfPeopleInTraffic} from '../counter-logic/TrafficLogic'
+import {addNoise} from '../counter-logic/TrafficLogic'
 
 
 const TrafficCounter = () => {
@@ -10,7 +10,7 @@ const TrafficCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: 34812375,
+        end: currentNumberOfPeopleInTraffic(),
         duration: 3,
         separator: ",",
         onEnd: () => updateCounter()
@@ -18,10 +18,10 @@ const TrafficCounter = () => {
 
     function updateCounter(){
         // update called twice below so there is a nice transition from initial count up and noise
-        update(34812375 + addNoise())
+        update(currentNumberOfPeopleInTraffic() + addNoise())
 
         const timer = setInterval(() => {
-            update(34812375 + addNoise())
+            update(currentNumberOfPeopleInTraffic() + addNoise())
         }, 1500);
 
         return () => {

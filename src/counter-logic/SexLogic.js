@@ -12,7 +12,7 @@ const maxDateTime = new Date("Sat Feb 13 2021 09:00:00 GMT-0500")
 const maxTimeInSeconds = findSecondsFromDate(maxDateTime)
 const secondsInTwelveHours = 43200
 
-export function currentNumberOfShaggers(){
+export function currentNumberOfPeopleHavingSex(){
     let timeNow = new Date()
     var difference = Math.abs(findSecondsFromDate(timeNow) - maxTimeInSeconds)
 
@@ -28,7 +28,7 @@ export function currentNumberOfShaggers(){
 export function addNoise(maxFluctuation){
     // +1 required so it's between 1 and max value not 0 and max value - 1
 
-    const deviation = (currentNumberOfShaggers()/max)*10
+    const deviation = (currentNumberOfPeopleHavingSex()/max)*10
 
     return randomNormal({mean: 0, dev: deviation})
 }

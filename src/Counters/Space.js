@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useCountUp } from 'react-countup';
-import {currentNumberOfShaggers} from '../counter-logic/SexLogic'
-import {addNoise} from '../counter-logic/SexLogic'
+import {currentNumberOfPeopleInSpace} from '../counter-logic/SpaceLogic'
 
 
 const SpaceCounter = () => {
@@ -10,7 +9,7 @@ const SpaceCounter = () => {
         countUp,
         update
     } = useCountUp({
-        end: 7,
+        end: currentNumberOfPeopleInSpace(),
         duration: 3,
         separator: ","
     });
