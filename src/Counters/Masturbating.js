@@ -30,7 +30,7 @@ const MasturbatingCounter = () => {
     }
 
     return (
-        <div>
+        <div className="counterInnerDiv">
             <span className="counter">{countUp}</span>
             <p className="counterParagraph">
                 People are masturbating right now

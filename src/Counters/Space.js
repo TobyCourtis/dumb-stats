@@ -15,7 +15,7 @@ const SpaceCounter = () => {
     });
 
     return (
-        <div>
+        <div className="counterInnerDiv">
             <span className="counter">{countUp}</span>
             <p className="counterParagraph">
                 People are in space right now

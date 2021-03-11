@@ -30,7 +30,7 @@ const TVCounter = () => {
     }
 
     return (
-        <div>
+        <div className="counterInnerDiv">
             <span className="counter">{countUp}</span>
             <p className="counterParagraph">
                 People are watching TV right now
