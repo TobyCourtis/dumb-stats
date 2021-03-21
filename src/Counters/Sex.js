@@ -33,7 +33,7 @@ const SexCounter = () => {
         <div className="counterInnerDiv">
             <span className="counter">{countUp}</span>
             <p className="counterParagraph">
-                People are shagging right now
+                People are having sex right now
             </p>
         </div>
     );
