@@ -1,5 +1,5 @@
 import './CSS/App.css';
-import SexCounter from './counters/Sex'
+import SexCounter from './counters/Sex.js'
 import DrivingCounter from './counters/Driving'
 import EatingCounter from './counters/Eating'
 import FlyingCounter from './counters/Flying'
