@@ -1,17 +1,46 @@
-import './App.css';
-import Counter from './Counter'
+import './CSS/App.css';
+import SexCounter from './counters/Sex.js'
+import DrivingCounter from './counters/Driving'
+import EatingCounter from './counters/Eating'
+import FlyingCounter from './counters/Flying'
+import MasturbatingCounter from './counters/Masturbating'
+import PooingCounter from './counters/Pooing'
+import SpaceCounter from './counters/Space'
+import TrafficCounter from './counters/Traffic'
+import TVCounter from './counters/TV'
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Counter className="counter" />
-        <p className="counterParagraph">
-            People are shagging right now
-        </p>
-      </header>
-    </div>
+    <body className="App-body">
+      <div className="counterDiv">
+        <SexCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <DrivingCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <EatingCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <FlyingCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <MasturbatingCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <PooingCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <SpaceCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <TrafficCounter className="counter" />
+      </div>
+      <div className="counterDiv">
+        <TVCounter className="counter" />
+      </div>
+    </body>
   );
 }
 
