@@ -1,6 +1,6 @@
 # Dumb Statistics App 
 
-Web Application that displays 'dumb statistics' with live figures - hosted at [www.dumbstats.org](http://dumbstats.org/).
+Web Application that displays 'dumb statistics' with live figures - hosted at [dumbstats.tobycourtis.com](https://dumbstats.tobycourtis.com/).
 
 
 ## How to run
